@@ -58,7 +58,7 @@ for i in range(0, len(data['id'])):
 
 print('cars in road = %s' %len(cars))
 
-f = open('../tmp/momentum.json', 'w+')
+f = open('../outputs/momentum.json', 'w+')
 f.write(json.dumps(res, indent=2))
 f.close()
 
