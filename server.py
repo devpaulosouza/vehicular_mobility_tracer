@@ -10,7 +10,7 @@ def hello():
 
 @app.route('/data/<file_name>')
 def data(file_name):
-    path = './tmp/'+file_name+'.json'
+    path = './outputs/'+file_name+'.json'
     print('file '+path+' was requested')
     if os.path.isfile(path):
         f = file(path, 'r')
